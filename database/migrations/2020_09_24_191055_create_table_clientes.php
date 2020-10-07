@@ -17,7 +17,7 @@ class CreateTableClientes extends Migration
             $table->bigIncrements('id');
             //$table->integer('reu_id');
             $table->string('nome');
-            $table->string('email');
+            $table->string('email', 128);
             $table->longText('numero_processo');
             $table->string('telefone');
             $table->longText('observacao');
